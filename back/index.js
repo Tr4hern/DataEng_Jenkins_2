@@ -1,5 +1,6 @@
 // server/index.js
 
+const session = require('express-session');
 const express = require("express");
 
 const PORT = process.env.PORT || 3001;
