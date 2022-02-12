@@ -3,14 +3,14 @@ version: '3'
 services:
   backend:
     build:
-      context: ./back
+      context: ./backend
       dockerfile: back.dockerfile
     image: "back_node"
     ports:
       - "3001:3001"
   frontend:
     build:
-      context: ./front
+      context: ./frontend
       dockerfile: front.dockerfile
     image: "front_react"
     ports:
